@@ -15,3 +15,5 @@ export const ADMIN_CHAT = '77777777'
 //link to channel:
 export const CHANNEL = '@xxxxxxxx'
 ```
+
+Use "npm start" command to start bot

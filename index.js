@@ -22,6 +22,10 @@ Bot.onText(/\/help/, msg => {
 });
 
 Bot.onText(/(.+)/, (msg, match) => {
+  if (match[0].length > 199) {
+    Bot.sendMessage(msg.chat.id, 'Сделайте объявление короче (возможно только 200 знаков). Подробную информацию можно предоставить в личном чате.')
+    return
+  }
   if (!getUser(msg.chat.id).post.isCommand(match[1]) && !getUser(msg.chat.id).post.textAdded && getUser(msg.chat.id).post.picAdded) {
     getUser(msg.chat.id).post.text = match[1]
     getUser(msg.chat.id).post.textAdded = true
