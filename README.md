@@ -12,6 +12,6 @@ export const TOKEN = '12345:XXXXXXXXXXXXXXXX'
 //admin chat id
 export const ADMIN_CHAT = '77777777'
 
-//ling to channel:
+//link to channel:
 export const CHANNEL = '@xxxxxxxx'
 ```
